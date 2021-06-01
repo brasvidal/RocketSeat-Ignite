@@ -1,15 +1,16 @@
 :root {
     --green: #50fa7b;
     --gray: #282a36;
-    --hovercolor: rgb(55, 216, 55);
+    --hovercolor: rgb(56, 30, 173);
     --textcolor: white;
+    --rocketRoxo: #7159c1;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
-    border: 0;
+    border: 10px;
 }
 
 body {
@@ -58,4 +59,70 @@ header div a:hover {
     line-height: 52px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+}
+
+#wrapper h4 {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+#wrapper p {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+#links-footer {
+    text-decoration: none;
+    color: var(--textcolor);
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 16px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#links-footer p a {
+    color: var(--hovercolor);
+    transition: color 200ms;
+}
+
+
+/*=====VIDEOS======*/
+
+.cards {
+    max-width: 800px;
+    margin: 0, auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--rocketRoxo);
+}
+
+.card__img-container img {
+    width: 100%;
+}
+
+.card__content,
+.card__info {
+    padding: 24px;
+}
+
+.card__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card__price {
+    background-color: var(--rocketRoxo);
+    filter: brightness(90%);
+    padding: 5px, 20px;
+    border-radius: 20px;
+    text-align: center;
 }
