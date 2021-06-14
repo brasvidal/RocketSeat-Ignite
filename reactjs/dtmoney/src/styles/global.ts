@@ -72,6 +72,17 @@ button{
 
 
 }
+.react-modal-close{
+    position:absolute;
+    right: 1.5rem;
+    top:1.5rem;
+    border:0;
+    background:transparent;
+    transition:200ms;
+    &:hover{
+        filter:luminosity(0.4);
+    }
+}
 
 
 `
